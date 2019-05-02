@@ -1,0 +1,187 @@
+*{
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background-color: antiquewhite;
+}
+
+.homecontainer{
+  text-align: center;
+}
+
+.homegrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-row-gap: 50px;
+  grid-column-gap: 50px;
+  margin: 0px 50px;
+}
+
+.thumb{
+  display: grid;
+  height: 300px;
+  width: auto;
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-size: 50px;
+  align-items: center;
+}
+
+a{
+  text-decoration: none;
+}
+
+#thumb1{
+  background-image: url("../Images/Gulf.jpg");
+}
+
+#thumb2{
+  background-image: url("../Images/Miami.jpg");
+}
+
+#thumb3{
+  background-image: url("../Images/Islands.jpg");
+}
+
+#thumb4{
+  background-image: url("../Images/Atlantic.jpg");
+}
+
+.gulfmenu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 40px;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  background-color: #FFA76B;
+  align-items: center;
+}
+
+.gulfmenu a {
+  color: white;
+}
+
+.gulfmenu a:hover {
+  text-decoration: underline;
+}
+
+.beachtitle {
+  text-align: center;
+}
+
+.beachgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 10px 30px;
+  grid-template-rows: 300px;
+  width: 90vw;
+  grid-column-gap: 20px;
+  padding: 10px;
+  margin: auto;
+  background-color: #FFA76B;
+}
+
+.beachpics {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.gulfpicdiv {
+  margin: 10px;
+  grid-row: span 2
+}
+
+.picdiv {
+  margin: 10px;
+  grid-row: span 2;
+}
+
+.beachinfo {
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+  padding: 5px;
+  margin-top: 10px;
+  background-color: #FFD46B;
+  text-align: center;
+  font-size: 20px;
+  align-items: center;
+}
+
+#hotel1, #hotel2 {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    padding: 5px;
+    margin-top: 10px;
+    background-color: #FFD46B;
+    text-align: center;
+    font-size: 20px;
+}
+
+.beachinfo h1, .beachinfo h2{
+  grid-column: span 2;
+}
+
+.beachinfo h2:hover{
+  background-color: orange;
+  cursor: pointer;
+}
+
+.pageinfo {
+  text-align: center;
+  padding: 5px 10vw;
+}
+
+.map{
+  padding-top: 10px;
+  grid-column: span 2;
+  margin: auto;
+}
+
+.social {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 750px) {
+
+  .homegrid{
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+
+  .beachgrid {
+    display: block;
+  }
+
+  .beachinfo{
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+  }
+
+  .picdiv{
+    grid-row: span 1;
+  }
+
+  .beachpics{
+    grid-column: span 1;
+    display: block;
+    margin: 10px auto;
+  }
+
+  .gulfmenu{
+    grid-template-columns: 1fr;
+    grid-row-gap: 5px;
+    padding: 5px 0;
+  }
+}

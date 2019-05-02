@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Florida Beaches</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+<!-- jquery & iScroll -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+<!-- drawer.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+  </head>
+  <body class="drawer drawer--left">
+
+  <header role="banner">
+    <button type="button" class="drawer-toggle drawer-hamburger">
+      <span class="sr-only">toggle navigation</span>
+      <span class="drawer-hamburger-icon"></span>
+    </button>
+    <nav class="drawer-nav" role="navigation">
+      <ul class="drawer-menu">
+        <li><a class="drawer-brand" href="index.html">Florida Beaches</a></li>
+        <li><a class="drawer-menu-item" href="about.html">About Us</a></li>
+        <li><a class="drawer-menu-item" href="contact.html">Contact</a></li>
+        <li><a class="drawer-menu-item" href="gulf.html">Gulf</a></li>
+        <li><a class="drawer-menu-item" href="miami.html">Miami</a></li>
+        <li><a class="drawer-menu-item" href="islands.html">Islands</a></li>
+        <li><a class="drawer-menu-item" href="atlantic.html">Atlantic</a></li>
+
+
+      </ul>
+    </nav>
+  </header>
+  <main role="main">
+    <h1 class="beachtitle">Atlantic Coast</h1>
+    <div class="beachgrid">
+      <img class="beachpics" src="images/westpalm.jpg">
+      <img class="beachpics" src="images/westpalm2.jpg">
+
+      <div class="beachinfo">
+        <h1>West Palm Beach</h1>
+        <p>  Address: 1 S County Rd, Palm Beach, FL 33480
+        </p>
+        <p>Contact:(561) 655-6611
+        </p>
+        <p>Hours: 5:30Am-7Pm
+        </p>
+        <p>Lifeguard Hours: 8Am-5:30Pm
+        </p>
+
+
+        <div class="beachinfo">
+
+          <h1>Hotels/Resorts</h1>
+          <h2>The Breakers Palm Beach</h2>
+          <div class="picdiv">
+            <img class="beachpics" src="images/westpalmhotel.jpg">
+          </div>
+          <p>Address: 1 S County Rd, Palm Beach, FL 33480</p>
+          <p>Phone Number: (561) 655-6611</p>
+          <h2>The Brazilian Court Hotel & Beach Club</h2>
+          <p>Address: 301 Australian Ave, Palm Beach, FL 33480</p>
+          <div class="picdiv">
+          <img class="beachpics" src="images/westpalmhotel2.jpg">
+          </div>
+          <p>Phone Number:(561) 655-7740 </p>
+
+        </div>
+
+
+
+
+
+      </div>
+
+
+         
+      <div class="map">
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114018.30833553355!2d-80.19908040530727!3d26.742074053496875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d8d5ccb595adc1%3A0x15efc7b51fe16bde!2sWest+Palm+Beach%2C+FL!5e0!3m2!1sen!2sus!4v1556577947862!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+      </div>
+    </div>
+  </main>
+  <script type="text/javascript">
+    $(document).ready(function() {
+$('.drawer').drawer();
+});
+  </script>
+  </body>
